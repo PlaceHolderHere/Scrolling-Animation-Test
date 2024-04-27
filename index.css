@@ -1,0 +1,41 @@
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 20vh;
+    margin-bottom: 85%;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s; /* Length of Transition */
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.cats {
+    display: flex;
+    justify-content: center;
+}
+
+.cat {
+    padding: 10px;
+}
+
+.cat:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.cat:nth-child(3) {
+    transition-delay: 400ms; 
+}
+
+.cat:nth-child(4) {
+    transition-delay: 600ms;
+}
